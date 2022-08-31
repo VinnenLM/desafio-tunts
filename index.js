@@ -84,6 +84,7 @@ https.get('https://restcountries.com/v3.1/all', res => {
             } else {
                 ws.cell(row, 4).string("-");
             }
+            console.log(`${country.name.common} cell added!`);
             row++;
         });
         wb.write('Excel.xlsx');
